@@ -81,6 +81,16 @@ The numpad, IJKL and WASD work as arrows too, as they do in the game. The bar un
 
 More in [How kartarchive.com Is Served](docs/hosting.md).
 
+## Offline EPUB 3 Albums
+
+The repository includes a small, dependency-free exporter for turning a hand-picked set of local screenshots or renders into an accessible, reflowable EPUB 3 album. It adds a cover, table of contents, alt text, captions and optional links back to source cards; it does not scrape the site or include game assets.
+
+See the [EPUB 3 album guide](docs/epub3-export.md) for the manifest format and usage:
+
+```sh
+python tools/epub3_export.py my-album/album.json --output my-album/kart-album.epub
+```
+
 ---
 
 ## Takedown and Corrections
@@ -103,7 +113,7 @@ Kart Archive is an unofficial fan archive. It shows game art from the 2010 China
 
 KartRider, all game assets, artwork, and related trademarks are the property of NEXON Korea Corporation, Tiancity, and/or their respective licensors and affiliates. This project is not affiliated with, endorsed by, or sponsored by any of these companies.
 
-The archive is intended strictly for educational, research, and personal non-commercial purposes. It is provided "as is", without warranty of any kind. This repository contains no source code and no game data files. The only game art in it is the logo, the animations and the screenshots in `docs/images`, which show what the site looks like.
+The archive is intended strictly for educational, research, and personal non-commercial purposes. It is provided "as is", without warranty of any kind. This repository does not include the garage website's source code or game data files. The repository includes an optional EPUB 3 packaging utility; the only game art in it is the logo, the animations and the screenshots in `docs/images`, which show what the site looks like.
 
 ---
 
